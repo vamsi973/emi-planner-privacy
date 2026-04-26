@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Planner - Privacy Policy</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --primary-dark: #4f46e5;
+            --bg-color: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --accent: #a855f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-image: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.15), transparent 25%);
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+            color: var(--primary-light);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .policy-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 45px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .policy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+        }
+
+        section {
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
+        section:nth-child(7) { animation-delay: 0.6s; }
+        section:nth-child(8) { animation-delay: 0.7s; }
+        section:nth-child(9) { animation-delay: 0.8s; }
+        section:nth-child(10) { animation-delay: 0.9s; }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 .step-num {
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--primary-light);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 18px;
+            font-weight: 300;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        strong {
+            color: #e2e8f0;
+            font-weight: 500;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+            padding-left: 28px;
+            position: relative;
+            font-weight: 300;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        li:hover {
+            color: #e2e8f0;
+            transform: translateX(4px);
+        }
+
+        li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: rgba(99, 102, 241, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 18px 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight-box p {
+            color: #e2e8f0;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-row:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .contact-row strong {
+            width: 120px;
+            color: var(--primary-light);
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-row span {
+            color: #e2e8f0;
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                margin: 40px 15px;
+            }
+            .policy-card {
+                padding: 30px 25px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .contact-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .contact-row strong {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="subtitle">EMI Planner</div>
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">Last updated: April 26, 2026</div>
+        </header>
+
+        <div class="policy-card">
+            <section>
+                <h2><span class="step-num">1</span> Introduction</h2>
+                <p><strong>EMI Planner</strong> ("we", "our", or "the app") is a free loan EMI calculator app built for Indian borrowers. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
+            </section>
+
+            <section>
+                <h2><span class="step-num">2</span> Data We Collect</h2>
+                <div class="highlight-box">
+                    <p>We do <strong>NOT</strong> collect any personal information.</p>
+                </div>
+                <p>EMI Planner works completely offline. All data you enter (loan amount, interest rate, tenure, saved plans) is stored only on your device using local storage. This data never leaves your device and is never sent to any server or third party.</p>
+                <p>We absolutely do not collect:</p>
+                <ul>
+                    <li>Name, email, phone number, or any personal identifiers</li>
+                    <li>Location data</li>
+                    <li>Financial account information</li>
+                    <li>Device identifiers</li>
+                    <li>Usage analytics or crash reports</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><span class="step-num">3</span> Local Storage</h2>
+                <p>Saved loan plans are stored locally on your device using AsyncStorage. This data is only accessible within the app and is deleted when you uninstall the app. We have no access to this data.</p>
+            </section>
+
+            <section>
+                <h2><span class="step-num">4</span> Camera Permission</h2>
+                <p>The app declares a camera permission in its manifest for potential future document scanning features. This permission is not currently used. The app will never access your camera without your explicit action.</p>
+            </section>
+
+            <section>
+                <h2><span class="step-num">5</span> Third-Party Services</h2>
+                <p>EMI Planner does not integrate with any third-party analytics, advertising, or tracking services.</p>
+            </section>
+
+            <section>
+                <h2><span class="step-num">6</span> Children's Privacy</h2>
+                <p>EMI Planner does not knowingly collect any data from children under the age of 13. The app contains no features that target children.</p>
+            </section>
+
+            <section>
+                <h2><span class="step-num">7</span> Data Security</h2>
+                <p>Since all data is stored locally on your device and never transmitted, the security of your data depends on your device's security settings. We recommend keeping your device locked with a PIN or biometric lock.</p>
+            </section>
+
+            <section>
+                <h2><span class="step-num">8</span> Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. Any changes will be reflected with a new "Last updated" date at the top of this page. Continued use of the app after changes means you accept the updated policy.</p>
+            </section>
+
+            <section>
+                <h2><span class="step-num">9</span> Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please reach out to us:</p>
+                <div class="contact-info">
+                    <div class="contact-row">
+                        <strong>Email</strong>
+                        <span>[EMAIL_ADDRESS]</span>
+                    </div>
+                    <div class="contact-row">
+                        <strong>App</strong>
+                        <span>EMI Planner</span>
+                    </div>
+                    <div class="contact-row">
+                        <strong>Developer</strong>
+                        <span>Vamsi Krishna Danda</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
